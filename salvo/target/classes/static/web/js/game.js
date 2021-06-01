@@ -10,6 +10,11 @@ $(function() {
             data.ships.forEach(function (dt){
                 res = res.concat(dt.locations.map(s=>s.split("")));
             });
+            var salv = [];
+           data.salvo.forEach(function (dt){
+               salv = salv.concat(dt.locations.map(s=>s.split("")));
+           });
+
             for(var i=1;i<=10;i++){
                 item2= document.createElement('td');
                 item2.appendChild(document.createTextNode(i));
@@ -31,6 +36,14 @@ $(function() {
                                 item2.appendChild(document.createTextNode(" "));
                             }
                         });
+                        salv.forEach(function(ele){
+                                                    if((ele[0].localeCompare((y+9).toString(36).toUpperCase())==0)&&(ele[1].localeCompare(x.toString())==0)){
+                                                        item2.appendChild(document.createTextNode("G"));
+                                                        item2.style.backgroundColor = "#D35400";
+                                                    }else{
+                                                        item2.appendChild(document.createTextNode(" "));
+                                                    }
+                                                });
                         item.appendChild(item2);
                 }
                 document.getElementById('table1').appendChild(item);
