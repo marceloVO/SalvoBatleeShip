@@ -25,6 +25,9 @@ public class Player {
     @OneToMany(mappedBy = "player", fetch = FetchType.EAGER)
     private List<GamePlayer> gamePlayers = new ArrayList<GamePlayer>();
 
+    @OneToMany(mappedBy = "players",fetch = FetchType.EAGER)
+    private List<Score> score = new ArrayList<Score>();
+
 
 
     public Player() {
