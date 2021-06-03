@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
@@ -25,6 +26,14 @@ public class GamePlayer {
 
     @JsonFormat(pattern  = "yyyy-MM-dd HH:mm:ss")
     private Date joinDate;
+
+    @OneToMany(mappedBy = "gameP", fetch = FetchType.EAGER)
+    private Set<Ship> ships ;
+
+
+    @OneToMany(mappedBy = "gamePlay", fetch = FetchType.EAGER)
+    private Set<Salvo> salvo ;
+
 
     public GamePlayer() {
     }
@@ -64,11 +73,7 @@ public class GamePlayer {
     }
 
 
-    @OneToMany(mappedBy = "gameP", fetch = FetchType.EAGER)
-    private Set<Ship> ships ;
 
-    @OneToMany(mappedBy = "gamePlay", fetch = FetchType.EAGER)
-    private Set<Salvo> salvo ;
 
     public Set<Salvo> getSalvo(){ return this.salvo; }
 
@@ -92,5 +97,10 @@ public class GamePlayer {
         dto.put("player",getPlayer().playerInfo());
         return dto;
     }
+
+    public List<Object> getSalvoesInfo(){
+        return this.getSalvo().stream().map(Salvo::getInfoSalvo).collect(toList());
+    }
+
 
 }

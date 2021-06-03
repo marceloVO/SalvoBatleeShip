@@ -66,9 +66,11 @@ public class Game {
         dto.put("createDate",getCreateDate());
         dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::playerInfo).collect(toList()));
         dto.put("ships",gp.getShips().stream().map(Ship::getInfo).collect(toList()));
-        dto.put("salvo",gp.getSalvo().stream().map(Salvo::getInfo).collect(toList()));
+        dto.put("salvoes",getGamePlayers().stream().map(GamePlayer::getSalvoesInfo).flatMap(Collection::stream).collect(toList()));
         return dto;
     }
+
+
 
     public void addGamePlayer(GamePlayer gamePlayer){
         gamePlayer.setGame(this);

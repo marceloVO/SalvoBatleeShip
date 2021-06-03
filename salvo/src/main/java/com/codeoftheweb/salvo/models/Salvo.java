@@ -64,7 +64,7 @@ public class Salvo {
         this.turn = turn;
     }
 
-    public Map<String, Object> getInfo(){
+    public Map<String, Object> getInfoSalvo(){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("turn",getTurn());
         dto.put("player",getGamePlay().getPlayer().getId());
