@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -27,8 +28,11 @@ public class AppController {
     private GamePlayerRepository gpr;
 
     @RequestMapping("/games")
-    public List<Object> getGames() {
-        return repo.findAll().stream().map(Game::gameInfo).collect(toList());
+    public Map<String, Object> getGames()
+    {
+        Map<String, Object> dto = new LinkedHashMap<String, Object>();
+        dto.put("games",repo.findAll().stream().map(Game::gameInfo).collect(toList()));
+        return dto;
     }
 
     @RequestMapping("/game_view/{nn}")

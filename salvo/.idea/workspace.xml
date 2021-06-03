@@ -5,11 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="337633a0-c073-4a61-b5e6-b4ab52eac25a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/games.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../salvo.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../salvo.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/controller/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/GamePlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Salvo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repository/SalvoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repository/SalvoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repository/ScoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/repository/ScoreRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/js/games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/SalvoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/controller/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/GamePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/GamePlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Salvo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Salvo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/SalvoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/SalvoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/css/game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/games.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/games.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/games.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/js/games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +65,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1tLwe50vl9n4axTCeUtWZ5D3vIF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

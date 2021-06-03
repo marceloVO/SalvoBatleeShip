@@ -1,9 +1,12 @@
 package com.codeoftheweb.salvo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 @Entity
 public class Score {
@@ -15,22 +18,22 @@ public class Score {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="game_id")
-    private Game games;
+    private Game gamesScore;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="player_id")
-    private Player players;
+    private Player playerScore;
 
-    private Integer score;
+    private double score;
 
     private Date finishDate;
 
     public Score() {
     }
 
-    public Score(Game games, Player players, Integer score) {
-        this.games = games;
-        this.players = players;
+    public Score(Game gamesScore, Player playerScore, double score) {
+        this.gamesScore = gamesScore;
+        this.playerScore = playerScore;
         this.score = score;
     }
 
@@ -38,27 +41,27 @@ public class Score {
         return id;
     }
 
-    public Game getGames() {
-        return games;
+    public Game getGamesScore() {
+        return gamesScore;
     }
 
-    public void setGames(Game games) {
-        this.games = games;
+    public void setGamesScore(Game gamesScore) {
+        this.gamesScore = gamesScore;
     }
 
-    public Player getPlayers() {
-        return players;
+    public Player getPlayerScore() {
+        return playerScore;
     }
 
-    public void setPlayers(Player players) {
-        this.players = players;
+    public void setPlayerScore(Player players) {
+        this.playerScore = players;
     }
 
-    public Integer getScore() {
+    public double getScore() {
         return score;
     }
 
-    public void setScore(Integer score) {
+    public void setScore(double score) {
         this.score = score;
     }
 
@@ -68,5 +71,15 @@ public class Score {
 
     public void setFinishDate(Date finishDate) {
         this.finishDate = new Date();
+    }
+
+
+
+
+    public Map<String, Object> scoreInfo(){
+        Map<String, Object> dto = new LinkedHashMap<String, Object>();
+        dto.put("score",getScore());
+        dto.put("player",getPlayerScore().getId());
+        return dto;
     }
 }

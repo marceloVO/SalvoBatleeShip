@@ -24,7 +24,7 @@ public class Salvo {
     @Column(name = "location")
     private List<String> Locations = new ArrayList<>();
 
-    private String turn;
+    private long turn;
 
 
     public Salvo() {
@@ -34,7 +34,7 @@ public class Salvo {
         return id;
     }
 
-    public Salvo(GamePlayer gamePlay, List<String> locations, String turn) {
+    public Salvo(GamePlayer gamePlay, List<String> locations, long turn) {
         this.gamePlay = gamePlay;
         Locations = locations;
         this.turn = turn;
@@ -56,11 +56,11 @@ public class Salvo {
         Locations = locations;
     }
 
-    public String getTurn() {
+    public long getTurn() {
         return turn;
     }
 
-    public void setTurn(String turn) {
+    public void setTurn(long turn) {
         this.turn = turn;
     }
 
