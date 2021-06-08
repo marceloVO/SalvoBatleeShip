@@ -59,7 +59,7 @@ public class Game {
     public Map<String, Object> gameInfo(){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("id",getId());
-        dto.put("createDate",getCreateDate());
+        dto.put("created",getCreateDate());
         dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::scoreInfo).collect(toList()));
         dto.put("scores",getScore().stream().map(Score::scoreInfo).collect(toList()));
         return dto;
@@ -67,7 +67,7 @@ public class Game {
     public Map<String, Object> getInfo(GamePlayer gp){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("id",getId());
-        dto.put("createDate",getCreateDate());
+        dto.put("created",getCreateDate());
         dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::playerInfo).collect(toList()));
         dto.put("ships",gp.getShips().stream().map(Ship::getInfo).collect(toList()));
         dto.put("salvoes",getGamePlayers().stream().map(GamePlayer::getSalvoesInfo).flatMap(Collection::stream).collect(toList()));
