@@ -55,17 +55,18 @@ public class SalvoApplication {
             Game game_1 = new Game(new Date());
             Game game_2 = new Game(fecha.from(fecha.toInstant().plusSeconds(3600)));
             Game game_3 = new Game(fecha.from(fecha.toInstant().plusSeconds(7200)));
-
+            Game game_4 = new Game(fecha.from(fecha.toInstant().plusSeconds(10800)));
             GameRep.save(game_1);
             GameRep.save(game_2);
             GameRep.save(game_3);
-
+            GameRep.save(game_4);
             GamePlayer gamePlayers1 = new GamePlayer(game_1,p1, new Date());
             GamePlayer gamePlayers2 = new GamePlayer(game_1,p4, new Date());
             GamePlayer gamePlayers3 = new GamePlayer(game_2,p3, new Date());
             GamePlayer gamePlayers4 = new GamePlayer(game_2,p2, new Date());
             GamePlayer gamePlayers5 = new GamePlayer(game_3,p3, new Date());
             GamePlayer gamePlayers6 = new GamePlayer(game_3,p4, new Date());
+            GamePlayer gamePlayers7 = new GamePlayer(game_4,p1, new Date());
 
             GamePlayer.save(gamePlayers1);
             GamePlayer.save(gamePlayers2);
@@ -73,6 +74,7 @@ public class SalvoApplication {
             GamePlayer.save(gamePlayers4);
             GamePlayer.save(gamePlayers5);
             GamePlayer.save(gamePlayers6);
+            GamePlayer.save(gamePlayers7);
 
             Ship ship1 = new Ship(gamePlayers1,Arrays.asList("H2","H3","H4"),"Destroyer");
             Ship ship2 = new Ship(gamePlayers1,Arrays.asList("E1","E2"),"Patrol Boat");
