@@ -5,26 +5,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="337633a0-c073-4a61-b5e6-b4ab52eac25a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/web/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../salvo.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../salvo.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/GamePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Salvo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/models/Salvo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/css/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/web/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/web/js/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/GamePlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/GamePlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Salvo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Salvo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/css/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/web/game.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/game.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/web/js/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codeoftheweb/salvo/SalvoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/SalvoApplication$WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/SalvoApplication$WebSecurityConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/SalvoApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/controller/AppController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/GamePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Salvo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/models/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/GamePlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/GameRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/PlayerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/SalvoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/ScoreRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/repository/ShipRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/service/GamePlayerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/service/GameService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/service/implementacion/GamePlayerServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/codeoftheweb/salvo/service/implementacion/gameServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/manager.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/game.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/games.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/game.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/games.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/back1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/back2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/backshipplacement.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/backships.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/battleshipafloat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/battleshiphor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/battleshipsunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/battleshipver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/carrierafloat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/carrierhor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/carriersunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/carrierver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/destoyersunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/destroyerafloat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/destroyerhor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/destroyerver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/gameactionrequired.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/greenhit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/greenmissed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/gridback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/hit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/hit3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/hitblast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/hitsmoke.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/misilrocket.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/missed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/patrolboatafloat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/patrolboathor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/patrolboatsunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/patrolboatver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/redhit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/rotate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/rotatewhite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/submarineafloat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/submarinehor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/submarinesunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/submarinever.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/targetself.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/img/titlebannersalvo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/game.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/games.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/web/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/codeoftheweb/salvo/SalvoApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +106,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,7 +115,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1tLwe50vl9n4axTCeUtWZ5D3vIF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

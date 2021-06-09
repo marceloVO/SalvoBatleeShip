@@ -98,9 +98,23 @@ public class GamePlayer {
         return dto;
     }
 
+    public Map<String, Object> scoreInfo(){
+        Score s = getPlayer().getScore(getGame());
+        Map<String, Object> dto = new LinkedHashMap<String, Object>();
+        dto.put("id",getId());
+        dto.put("player",getPlayer().playerInfo());
+        if( s != null){
+            dto.put("score",s.getScore());
+        }else{
+            dto.put("score",0);
+        }
+        return dto;
+    }
+
     public List<Object> getSalvoesInfo(){
         return this.getSalvo().stream().map(Salvo::getInfoSalvo).collect(toList());
     }
+
 
 
 }

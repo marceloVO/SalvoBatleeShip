@@ -20,7 +20,8 @@ public class Game {
     @OneToMany(mappedBy = "game", fetch = FetchType.EAGER)
     private List<GamePlayer> gamePlayers = new ArrayList<GamePlayer>() ;
 
-
+    @OneToMany(mappedBy = "gamesScore",fetch = FetchType.EAGER)
+    private List<Score> score = new ArrayList<Score>();
 
     public Game() {
 
@@ -29,6 +30,8 @@ public class Game {
     public List<GamePlayer> getGamePlayers() {
         return gamePlayers;
     }
+
+    public List<Score> getScore(){ return score; }
 
     public Game(Date createDate) {
         this.createDate = createDate;
@@ -56,14 +59,15 @@ public class Game {
     public Map<String, Object> gameInfo(){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("id",getId());
-        dto.put("createDate",getCreateDate());
-        dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::playerInfo).collect(toList()));
+        dto.put("created",getCreateDate());
+        dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::scoreInfo).collect(toList()));
+        dto.put("scores",getScore().stream().map(Score::scoreInfo).collect(toList()));
         return dto;
     }
     public Map<String, Object> getInfo(GamePlayer gp){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("id",getId());
-        dto.put("createDate",getCreateDate());
+        dto.put("created",getCreateDate());
         dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::playerInfo).collect(toList()));
         dto.put("ships",gp.getShips().stream().map(Ship::getInfo).collect(toList()));
         dto.put("salvoes",getGamePlayers().stream().map(GamePlayer::getSalvoesInfo).flatMap(Collection::stream).collect(toList()));

@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static java.util.stream.Collectors.toList;
 
@@ -21,9 +18,14 @@ public class Player {
     @GenericGenerator(name = "native", strategy = "native")
     private long id;
     private String userName;
+    private String password;
 
     @OneToMany(mappedBy = "player", fetch = FetchType.EAGER)
     private List<GamePlayer> gamePlayers = new ArrayList<GamePlayer>();
+
+
+    @OneToMany(mappedBy = "playerScore",fetch = FetchType.EAGER)
+    private Set<Score> score ;
 
 
 
@@ -35,11 +37,18 @@ public class Player {
         return id;
     }
 
-    public Player(String userName){
+    public Player(String userName, String password){
         this.userName = userName;
+        this.password = password;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getUserName(){
         return userName;
@@ -56,17 +65,37 @@ public class Player {
     public List<Game> getGames() {
         return gamePlayers.stream().map(GamePlayer::getGame).collect(toList());
     }
+
+    public Set<Score> getScore() {
+        return score;
+    }
+
+    public Score getScore(Game g){
+        Optional<Score> s =  this.getScore().stream().filter(score -> score.getGamesScore().equals(g)).findFirst();
+        if(s.isPresent()){
+            return s.get();
+        }else{
+            return null;
+        }
+    }
+
     public void addGamePlayer(GamePlayer gamePlayer){
         gamePlayer.setPlayer(this);
         gamePlayers.add(gamePlayer);
     }
 
+
+
     public Map<String, Object> playerInfo(){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
         dto.put("id",getId());
-        dto.put("userName",getUserName());
+        dto.put("email",getUserName());
         return dto;
+
     }
+
+
+
 
 
 }
