@@ -66,11 +66,18 @@ public class Game {
     }
     public Map<String, Object> getInfo(GamePlayer gp){
         Map<String, Object> dto = new LinkedHashMap<String, Object>();
+        Map<String, Object> hits = new LinkedHashMap<String, Object>();
+
+        hits.put("self", new ArrayList<>());
+        hits.put("opponent", new ArrayList<>());
+
         dto.put("id",getId());
         dto.put("created",getCreateDate());
+        dto.put("gameState","PLACESHIPS");
         dto.put("gamePlayers",getGamePlayers().stream().map(GamePlayer::playerInfo).collect(toList()));
         dto.put("ships",gp.getShips().stream().map(Ship::getInfo).collect(toList()));
         dto.put("salvoes",getGamePlayers().stream().map(GamePlayer::getSalvoesInfo).flatMap(Collection::stream).collect(toList()));
+        dto.put("hits", hits);
         return dto;
     }
 
